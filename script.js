@@ -58,21 +58,21 @@ function solve() {
         console.log('bruh')
     } else if (currentOperator == 1) {
         inActiveNumText.textContent = (inActiveNum + ' + ' + activeNum + ' =')
-        activeNum = (parseInt(inActiveNum) + parseInt(activeNum))
+        activeNum = (parseFloat(inActiveNum) + parseFloat(activeNum))
         activeNumText.textContent = activeNum
         justOperated = true
     } else if (currentOperator == 2) {
         inActiveNumText.textContent = (inActiveNum + ' - ' + activeNum + ' =')
-        activeNum = (inActiveNum - activeNum)
+        activeNum = (parseFloat(inActiveNum) - parseFloat(activeNum))
         activeNumText.textContent = activeNum
         justOperated = true
     } else if (currentOperator == 3) {
-        inActiveNumText.textContent = (inActiveNum + ' × ' + activeNum + ' =')
+        inActiveNumText.textContent = (parseFloat(inActiveNum) + ' × ' + parseFloat(activeNum) + ' =')
         activeNum = (inActiveNum * activeNum)
         activeNumText.textContent = activeNum
         justOperated = true
     } else if (currentOperator == 4) {
-        inActiveNumText.textContent = (inActiveNum + ' ÷ ' + activeNum + ' =')
+        inActiveNumText.textContent = (parseFloat(inActiveNum) + ' ÷ ' + parseFloat(activeNum)+ ' =')
         activeNum = (inActiveNum / activeNum)
         activeNumText.textContent = activeNum
         justOperated = true
