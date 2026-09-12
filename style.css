@@ -45,13 +45,13 @@ p {
     justify-content: space-between;
 }
 
-.inActive {
+#inActive {
     font-size: small;
     opacity: 0.8;
     
 }
 
-.active {
+#active {
     font-size: large;
 }
 
@@ -66,7 +66,7 @@ p {
     gap: 4px;
 }
 
-.numButton, .opButton, .equalButton {
+.numButton, .opButton, .equalButton, .decimalButton {
     border-radius: 100px;
     border-style: none;
     color: white;
@@ -74,7 +74,7 @@ p {
     height: 42px;
 }
 
-.numButton:hover, .opButton:hover, .equalButton:hover {
+.numButton:hover, .opButton:hover, .equalButton:hover, .decimalButton:hover {
     filter: brightness(150%);
     cursor: pointer;
 }
@@ -83,7 +83,7 @@ p {
     background-color: #22292E;
 }
 
-.opButton {
+.opButton, .decimalButton {
     background-color: #715A5A;
 }
 
